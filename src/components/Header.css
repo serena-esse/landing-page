@@ -1,0 +1,48 @@
+/* Stile per l'header */
+.header {
+  background-color: rgba(0, 0, 0, 0.7); /* Sfondo nero con 70% di trasparenza */
+  padding: 0.75rem 1.5rem; /* Riduci il padding per rendere la navbar più sottile */
+  color: antiquewhite;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Linea sottile di separazione con trasparenza */
+  position: fixed; /* Fissa la navbar in cima alla pagina */
+  width: 100%; /* Assicura che la navbar occupi tutta la larghezza */
+  top: 0; /* Posiziona la navbar in alto */
+  left: 0; /* Assicura che la navbar inizi dal bordo sinistro */
+  z-index: 1000; /* Mantieni la navbar sopra gli altri contenuti */
+}
+
+/* Stile per il contenitore principale */
+.header__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Stile per il titolo */
+.header__title {
+  font-size: 1.5rem; /* Riduci la dimensione del font per il titolo */
+  font-weight: bold;
+}
+
+/* Stile per il menu di navigazione */
+.header__nav ul {
+  display: flex;
+  gap: 1rem; /* Riduci il gap tra gli elementi del menu */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header__nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.875rem; /* Riduci la dimensione del font per i link */
+  transition: color 0.3s ease;
+}
+
+.header__nav a:hover {
+  color: #ff6347; /* Colore hover (esempio: rosso/arancione) */
+}

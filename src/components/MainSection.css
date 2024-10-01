@@ -1,0 +1,113 @@
+/* Stile per la sezione principale */
+.main-section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Stile per il video di sfondo */
+.main-section__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Posiziona il video dietro al contenuto */
+}
+
+/* Overlay scuro per migliorare la leggibilità del testo */
+.main-section__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 5;
+}
+
+/* Stile per il contenuto */
+.main-section__content {
+  position: absolute;
+  top: 60%; /* Sposta il contenuto più in basso rispetto al centro */
+  right: 2rem; /* Posiziona il riquadro a destra dello schermo */
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5); /* Nero con 50% di trasparenza */
+  color: antiquewhite;
+  padding: 2rem;
+  border-radius: 1rem; /* Angoli tondeggianti */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  width: 300px; /* Larghezza fissa del riquadro */
+  text-align: center; /* Allinea il testo al centro */
+}
+
+/* Stile per l'intestazione e il paragrafo */
+.main-section__content h2,
+.main-section__content p {
+  text-align: left; /* Allineamento del testo a sinistra */
+}
+
+/* Stile per il contenitore del form e dell'input */
+.form-container {
+  position: relative; /* Per posizionare il pulsante all'interno */
+}
+
+/* Stile per il campo di input a pillola */
+.email-input {
+  width: 85%;
+  padding: 10px;
+  border: 2px solid antiquewhite; /* Bordo antiquewhite */
+  border-radius: 50px;
+  outline: none;
+  background-color: #252525; /* Colore di sfondo scuro */
+  color: antiquewhite; /* Colore del testo */
+  /* Spazio per il pulsante all'interno */
+}
+
+/* Stile per il pulsante freccia all'interno dell'input */
+.submit-button {
+  position: absolute;
+  top: 50%;
+  right: 10px; /* Distanza dal bordo destro dell'input */
+  transform: translateY(-50%);
+  background-color: #252525;
+  border: 2px solid antiquewhite; /* Bordo antiquewhite */
+  border-radius: 50%; /* Bottone rotondo */
+  color: white;
+  padding: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1; /* Assicurati che il pulsante sia sopra l'input */
+}
+
+.submit-button:hover {
+  background-color: #ff6347;
+}
+
+/* Stile per la griglia delle card */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Due colonne */
+  gap: 5px; /* Spazio tra le card */
+  margin-top: 1rem; /* Spazio sopra la griglia */
+}
+
+/* Stile per le singole card */
+.card {
+  border-radius: 0.5rem; /* Angoli tondeggianti */
+}
+
+/* Stile per l'immagine all'interno delle card */
+.card-image {
+  width: 80%;
+  height: auto;
+  border-radius: 0.5rem;
+}

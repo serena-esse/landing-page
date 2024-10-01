@@ -1,0 +1,23 @@
+/* Stile per il footer */
+#footer {
+  background-color: #333; /* Sfondo scuro */
+  color: antiquewhite; /* Colore del testo antiquewhite */
+  text-align: center; /* Allineamento del testo al centro */
+  padding: 1.5rem 0; /* Spaziatura superiore e inferiore */
+}
+
+/* Stile per i link nel footer */
+#footer a {
+  color: #87ceeb; /* Colore dei link (azzurro chiaro) */
+  text-decoration: none; /* Rimuove la sottolineatura dai link */
+}
+
+#footer a:hover {
+  text-decoration: underline; /* Aggiunge sottolineatura al passaggio del mouse */
+}
+
+/* Stile per il contenitore del footer */
+.container {
+  max-width: 1200px;
+  margin: 0 auto; /* Centra il contenitore */
+}

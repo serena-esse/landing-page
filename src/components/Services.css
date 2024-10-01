@@ -1,0 +1,72 @@
+/* Stile generale della sezione servizi */
+.services-section {
+  padding: 5rem 0;
+  background-color: #000; /* Fondo nero */
+  text-align: center;
+  color: antiquewhite; /* Testo bianco */
+}
+
+/* Layout a griglia per le card */
+.services-section__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  justify-content: center; /* Centra le card */
+}
+
+/* Responsive per schermi più grandi */
+@media (min-width: 640px) {
+  .services-section__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .services-section__grid {
+    grid-template-columns: repeat(3, minmax(auto, 250px)); /* Card più strette */
+  }
+}
+
+/* Stile delle card */
+.services-card {
+  background-color: #1a1a1a; /* Sfondo scuro per le card */
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 250px; /* Limita la larghezza massima delle card */
+  margin: 0 auto; /* Centra le card */
+}
+
+/* Effetto hover per le card */
+.services-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Stile per l'immagine della card */
+.services-card__image {
+  width: 100%;
+  height: 12rem; /* Altezza ridotta per le card più corte */
+  object-fit: cover; /* Ritaglia e centra meglio l'immagine */
+}
+
+/* Stile per il contenuto della card */
+.services-card__content {
+  padding: 1rem; /* Ridotto per adattarsi alle card più corte */
+}
+
+/* Stile del titolo della card */
+.services-card__title {
+  font-size: 1.25rem; /* Ridotto per adattarsi alle card più corte */
+  font-weight: bold;
+  margin-bottom: 0.75rem; /* Ridotto per adattarsi alle card più corte */
+  color: #ffffff;
+}
+
+/* Stile del testo della card */
+.services-card__text {
+  font-size: 0.875rem; /* Ridotto per adattarsi alle card più corte */
+  color: #d1d5db; /* Colore testo leggermente grigio per contrasto */
+}
